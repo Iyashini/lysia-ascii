@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LYSIA-ASCII</title>
+  <style>
+    :root {
+      --bg:      #0d0d0d;
+      --bg2:     #1a1a1a;
+      --gold:    #c8a96e;
+      --red:     #c0392b;
+      --text:    #e8e8e8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: var(--gold);
+      font-size: 1.4rem;
+      letter-spacing: 0.4em;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: var(--text);
+      opacity: 0.4;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 2rem;
+    }
+
+    #drop-zone {
+      border: 1px solid var(--gold);
+      padding: 3rem 4rem;
+      text-align: center;
+      cursor: pointer;
+      color: var(--gold);
+      opacity: 0.6;
+      transition: opacity 0.2s;
+      margin-bottom: 2rem;
+    }
+
+    #drop-zone:hover { opacity: 1; }
+
+    canvas { display: none; }
+
+    #output {
+      background: var(--bg2);
+      padding: 1rem;
+      font-size: 6px;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      white-space: pre;
+      color: var(--gold);
+      max-width: 100%;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✦ LYSIA-ASCII ✦</h1>
+  <p class="subtitle">IMAGE TO CHARACTER CONVERTER</p>
+
+  <div id="drop-zone">
+    [ drop image here or click to upload ]
+    <input type="file" id="file-input" accept="image/*" style="display:none" />
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <pre id="output"></pre>
+
+  <script src="main.js"></script>
+</body>
+</html>
