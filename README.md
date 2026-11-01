@@ -42,18 +42,6 @@ Inspired by three references, fused into one:
 
 ---
 
-## Visual identity
-
-| Role | Hex | Preview |
-|------|-----|---------|
-| Background | `#0d0d0d` | ![#0d0d0d](https://placehold.co/40x20/0d0d0d/0d0d0d) |
-| Secondary | `#1a1a1a` | ![#1a1a1a](https://placehold.co/40x20/1a1a1a/1a1a1a) |
-| Gold accent ← fleur de lys | `#c8a96e` | ![#c8a96e](https://placehold.co/40x20/c8a96e/c8a96e) |
-| Text | `#e8e8e8` | ![#e8e8e8](https://placehold.co/40x20/e8e8e8/e8e8e8) |
-
-Floral glyphs are **built by hand** using combinations of raw characters.
-We do NOT pick existing Unicode floral characters — we create our own.
-
 ---
 
 ## Stack
